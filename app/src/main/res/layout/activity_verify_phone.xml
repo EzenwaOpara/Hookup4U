@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".VerifyPhoneActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/cap3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Phone"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_text"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="32dp">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="US"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone Number"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:onClick="verifyCode"
+        android:textAllCaps="true"
+        android:background="@drawable/continue_bg"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"
+        android:layout_margin="32dp"/>
+</LinearLayout>

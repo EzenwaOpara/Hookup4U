@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".VerifyCodeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cap4"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code sent to"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text=" 987654321"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:layout_margin="8dp"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:inputType="phone"/>
+        <EditText
+            android:layout_margin="8dp"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:inputType="phone"/>
+        <EditText
+            android:layout_margin="8dp"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:inputType="phone"/>
+        <EditText
+            android:layout_margin="8dp"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Didn't receive any code? "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESEND"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#66B36D"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textAllCaps="true"
+        android:onClick="verifyDialog"
+        android:background="@drawable/continue_bg"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"
+        android:layout_margin="32dp"/>
+</LinearLayout>

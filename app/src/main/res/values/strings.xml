@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hookup4U</string>
+    <string name="login_info">By tapping on "Log in", you agree with our Terms. Learn how we process your data in our Privacy Policy and Cookie Policy</string>
+    <string name="verification_text">Please enter your phone number to receive a verification code. Message and data rates may apply.</string>
+</resources>
